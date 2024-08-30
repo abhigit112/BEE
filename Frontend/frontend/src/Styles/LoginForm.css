@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Updated for a cleaner look */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
+  }
+  
+  h1 {
+    color: #00796b; /* Adjusted color for better contrast */
+    font-size: 26px; /* Slightly larger for better visibility */
+    margin-bottom: 20px;
+    font-weight: 400;
+  font-family:"Poly",serif;
+}
+  
+  
+  .bold {
+    font-weight: 600;
+    font-family:"Poppins", sans-serif;
+    font-style: normal;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #00796b;
+  }
+  
+  .forgot-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .checkbox-container label {
+    font-size: 14px;
+    color: #666;
+  }
+ 
+  .login-button {
+    background-color: #009688;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #00796b;
+  }
+  
+  .alternative-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .alternative-login hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px ;
+    margin-top: 2rem;
+    position: relative;
+    right: 8rem;
+  }
+  
+  .google-login {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .google-login:hover {
+    border-color: #009688;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.3); /* Adds a subtle shadow */
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .create-account-link {
+    font-size: 14px;
+    color: #009688;
+    margin-top: 10px;
+  }
+  
+  .create-account-link a {
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }
+  
