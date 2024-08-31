@@ -17,7 +17,7 @@
 // >
 //   <App />
 // </Auth0Provider>
-  
+
 // );
 
 // // If you want to start measuring performance in your app, pass a function
@@ -25,32 +25,15 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import App from './App';
-// import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-// import HomePage from './components/HomePage1';
-
-const clientId = "519863360942-shugco8nc8bs613ofii1ipcrg993mac7.apps.googleusercontent.com";
-
-// const router = createBrowserRouter([
-//   {
-//   path:"/",
-//   element:"HomePage"
-//   },
-//   {
-//     path:"/"
-//   }
-// ]) 
-
-
-ReactDOM.render(
-  <GoogleOAuthProvider clientId={clientId}>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <GoogleOAuthProvider clientId="836702564374-kiiqeuscr947e2ktdms2tk61d61dqio0.apps.googleusercontent.com">
     <App />
-  </GoogleOAuthProvider>,
-  document.getElementById('root')
+  </GoogleOAuthProvider>
 );
-

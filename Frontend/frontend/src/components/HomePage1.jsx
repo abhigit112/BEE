@@ -8,6 +8,7 @@ const NavBar = () => {
   // const { loginWithRedirect,logout,isAuthenticated ,user} = useAuth0();
   return (
     <nav className="navbar">
+      
       <div className="navbar-logo">
         <h1>Fine<span className="highlight">Cards</span></h1>
       </div>

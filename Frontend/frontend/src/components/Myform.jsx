@@ -63,7 +63,7 @@ const Myform = () => {
             placeholder='otp'
             value={otp}
             onChange={(e)=>setotp(e.target.value)}/><br/>
-            <button onClick={verifyotp}>Submit</button>
+            <button onClick={verifyotp}className='signup-button'>Submit</button>
             <p>{status}</p>
           
 
