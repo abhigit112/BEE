@@ -41,20 +41,18 @@ const LoginFormx = () => {
       <h1>
         Fine<span className="bold">Cards</span>
       </h1>
+
       <form onSubmit={login}>
         <input
           type="text"
           placeholder="Email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          onChange={(e) => setEmail(e.target.value)}/>
         <input
           type="password"
           placeholder="Password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <br />
+          onChange={(e) => setPassword(e.target.value)}/>
         <a href="login-button">
           <button type="submit" className="login-button">
             Login
@@ -66,7 +64,6 @@ const LoginFormx = () => {
         </a>
         <div className="alternative-login">
           <p>or sign in with</p>
-          <hr />
           <GoogleLogin
             onSuccess={(credentialResponse) => {
               console.log(credentialResponse);
@@ -74,9 +71,7 @@ const LoginFormx = () => {
             onError={() => {
               console.log("Login Failed");
             }}
-            
           />
-
         </div>
         <div className="create-account-link">
           <a href="/create-account">Create an account</a>

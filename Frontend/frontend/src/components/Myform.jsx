@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../Styles/Myform.css';
 import googleLogo from '../pics/logo.png'; // Import the Google logo
 import axios from 'axios';
@@ -35,7 +34,9 @@ const Myform = () => {
 
   return (
     <div className="signup-container">
-      <h1>Fine<span className="bold">Cards</span></h1>
+      <h1
+      className="text-3xl"
+      >Fine<span className="bold">Cards</span></h1>
       <h2>Create an account</h2>
       <form onSubmit={sendEmail}> {/* Add onSubmit handler */}
         <input
@@ -50,23 +51,24 @@ const Myform = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)} // Fixed typo in setPassword
         /><br/>
-
-        <p className="terms">
-          By continuing, you agree to our <a href="/terms">terms of service</a>.
-        </p>
         
         <button type='submit' className='login-buttonx'>Send SMS</button>
         <p>{status}</p>
+
         <h1>Verify Otp</h1>
+        <div
+        className="flex justify-center items-center flex-col"
+        >
         <input
+            className="w-2/4 p-3 border border-gray-400"
             type='number'
-            placeholder='otp'
+            placeholder='Enter OTP'
             value={otp}
             onChange={(e)=>setotp(e.target.value)}/><br/>
             <button onClick={verifyotp}className='signup-button'>Submit</button>
             <p>{status}</p>
           
-
+        </div>
         <div className="alternative-signup">
           <p>or sign up with</p>
           <button type="button" className="google-signup" >

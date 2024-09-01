@@ -39,7 +39,8 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h2>Delivering Superior Services</h2>
+        {/* <h2 className="text-white">Delivering Superior Services</h2> */}
+        <p>Delivering Superior Services</p>
         <h3>Your One Stop <span className="highlight">Solution.</span></h3>
         <p>
           Easily customize any design to your needs. Our templates are SEO-friendly and highly customizable.
